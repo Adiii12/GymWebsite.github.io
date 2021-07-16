@@ -1,0 +1,6 @@
+$(document).ready(function(){
+	$('.carousel').carousel();
+	$(".navbar-light .navbar-nav .nav-link.disabled").click(function(e){
+		e.preventDefault();
+	});
+});

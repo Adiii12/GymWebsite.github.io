@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header-scroll {
+  display: none;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  z-index: 100;
+  transition: 0.4s;
+}
+
+.header-scroll .header-inner {
+  padding: 25px 0px;
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-scroll .header-inner .logo-scroll {
+  width: 250px;
+  margin-top: -23px;
+}
+
+.header-scroll .header-inner .menu-scroll a {
+  margin: 0px 15px;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.header-scroll .header-inner .menu-scroll a:hover {
+  color: #2acd35;
+}
+
+.header-scroll .header-inner .icon-header-scroll .fa-search {
+  color: #000;
+  font-size: 15px;
+  margin: 0px 10px;
+  padding: 7px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.header-scroll .header-inner .icon-header-scroll .cart {
+  position: relative;
+  color: #000;
+  font-size: 15px;
+  margin: 0px 10px;
+  padding: 7px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.header-scroll .header-inner .icon-header-scroll .cart .count {
+  padding: 2px;
+  right: -10px;
+  top: -10px;
+  background-color: #f00f0f;
+  border-radius: 50%;
+  color: #fff;
+  position: absolute;
+}
+/*# sourceMappingURL=scroll.css.map */

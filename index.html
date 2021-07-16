@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Care</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- owl slider link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font awesome link  -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <!-- css link ========= -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/scroll.css" />
+    <link rel="stylesheet" href="css/mobile_menu.css" />
+  </head>
+  <body>
+    <section class="top">
+      <!-- header on scroll start  -->
+      <div class="header-scroll" id="navbar-scroll">
+        <div class="header-inner">
+          <img
+            class="logo-scroll"
+            id="logo-scroll"
+            src="images/logo.png"
+            alt="logo"
+          />
+          <div class="menu-scroll">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Events</a>
+            <a href="#">Shop</a>
+          </div>
+          <div class="icon-header-scroll">
+            <i id="search-icon" onclick="search()" class="fas fa-search"></i>
+            <span class="cart">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="count">00</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- header on scroll end  -->
+      <!-- pc header start ========== -->
+      <div class="header" id="navbar">
+        <div class="header-inner">
+          <img class="logo-w" id="logo" src="images/logo_w.png" alt="logo_w" />
+          <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Events</a>
+            <a href="#">Shop</a>
+          </div>
+          <div class="icon-header">
+            <i id="search-icon" onclick="search()" class="fas fa-search"></i>
+            <span class="cart">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="count">00</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- pc header end ========== -->
+
+      <!-- mobile header start ==================== -->
+      <div class="mobile_header" id="mobile_header">
+        <div class="mobile_menu_inner">
+          <div class="mobile_menu_left">
+            <img src="images/logo_w.png" alt="" />
+          </div>
+          <div class="mobile_menu_right">
+            <span id="mobile_hide" onclick="openNav()">
+              <i class="fas fa-bars"></i>
+            </span>
+            <div class="mobile_menu_link" id="mobile_link" onclick="closeNav()">
+              <div class="mobile_menu_link_inner">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+                <a href="#">Events</a>
+                <a href="#">Shop</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- mobile header end ====================== -->
+
+      <!-- search bar top start  ==========-->
+      <div class="search-top" id="search-top">
+        <div class="search-inner">
+          <span onclick="hide()" class="hide-search">X</span>
+          <form action="#" autocomplete="off">
+            <input
+              id="search"
+              class="search"
+              placeholder="Search "
+              type="text"
+            />
+            <i class="fas fa-search"></i>
+          </form>
+        </div>
+      </div>
+      <!-- search bar top end  ==========-->
+      <div class="hero-section">
+        <div class="inner">
+          <h1>Hi, I'm Ashley Graff!</h1>
+          <p>Your New Personal Coach for better life!</p>
+          <button class="hero-btn">Contact with me</button>
+        </div>
+      </div>
+    </section>
+    <!-- why peope need health-coach  start-->
+    <section class="health-coach">
+      <span class="box"></span>
+      <div class="health-coach-inner">
+        <h1>Why people need a Health Coach</h1>
+        <div class="row">
+          <div class="nutrition card">
+            <img src="images/watermelon.png" alt="" />
+            <h3>Nutrition Strategies</h3>
+            <div class="hide-text">
+              <p>
+                Healthy diet for body as <br />
+                well as for mind.
+              </p>
+            </div>
+            <div class="dots">
+              <span class="dot">.</span>
+              <span class="dot">.</span>
+              <span class="dot">.</span>
+            </div>
+          </div>
+          <div class="workout card">
+            <img src="images/running.png" alt="" />
+            <h3>Workout Routines</h3>
+            <div class="hide-text">
+              <p>
+                Taking care of your body <br />
+                is important.
+              </p>
+            </div>
+            <div class="dots">
+              <span class="dot">.</span>
+              <span class="dot">.</span>
+              <span class="dot">.</span>
+            </div>
+          </div>
+          <div class="individaul card">
+            <img src="images/pulse.png" alt="" />
+            <h3>Individual Support</h3>
+            <div class="hide-text">
+              <p>
+                More of a friend than a <br />
+                health coach.
+              </p>
+            </div>
+            <div class="dots">
+              <span class="dot">.</span>
+              <span class="dot">.</span>
+              <span class="dot">.</span>
+            </div>
+          </div>
+          <div class="first-hand card">
+            <img src="images/sand-clock.png" alt="" />
+            <h3>First-Hand Advice</h3>
+            <div class="hide-text">
+              <p>
+                Broad experience is always <br />
+                a bonus.
+              </p>
+            </div>
+            <div class="dots">
+              <span class="dot">.</span>
+              <span class="dot">.</span>
+              <span class="dot">.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h4>
+        I am delighted to be able to share with you the techniques I have learnt
+        over the years <br />
+        that have brought me much
+        <span style="color: green">happiness and success.</span>
+      </h4>
+    </section>
+    <!-- why people need health-coach  end-->
+
+    <!-- do not wait for tomorrow start -->
+    <section class="wait-for-tomorrow">
+      <span class="box"></span>
+      <div class="wait-for-tomorrow-inner">
+        <h1>Do not wait for tomorrow!</h1>
+        <div class="row">
+          <div class="left card">
+            <img src="images/1_-min-795x544.jpg" alt="" />
+            <div class="slider">
+              <span class="inner-box">
+                <img src="images/apple.png" alt="" />
+              </span>
+
+              <p>Personalized Nutrition Plan</p>
+              <div class="wait-tomorrow-btn">
+                <button class="wait-btn">More info</button>
+              </div>
+            </div>
+          </div>
+          <div class="center card">
+            <img src="images/2_-min-795x544.jpg" alt="" />
+            <div class="slider">
+              <span class="inner-box">
+                <img src="images/dumbell.png" alt="" />
+              </span>
+
+              <p>Personalized Exercise Program</p>
+              <div class="wait-tomorrow-btn">
+                <button class="wait-btn">More info</button>
+              </div>
+            </div>
+          </div>
+          <div class="right card">
+            <img src="images/3_-min-795x544.jpg" alt="" />
+            <div class="slider">
+              <span class="inner-box">
+                <img src="images/stopwatch.png" alt="" />
+              </span>
+
+              <p>Individual Routine Program</p>
+              <div class="wait-tomorrow-btn">
+                <button class="wait-btn">More info</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- do not wait for tomorrow end -->
+    <!-- 3month health course start -->
+    <section class="three-month">
+      <div class="three-month-caption">
+        <h1>3 months with a Health Coach</h1>
+        <p>
+          Start working on your body today, and with our individual fitness
+          program, already <br />
+          in 90 days you will see a totally different girl in the mirror!
+        </p>
+        <a href="#" class="three-month-btn">More info</a>
+      </div>
+    </section>
+    <!-- 3month health course end -->
+
+    <!-- news and article start  -->
+    <section class="news-article">
+      <span class="box"></span>
+      <div class="news-article-inner">
+        <h1>News and Articles</h1>
+        <div class="row">
+          <!-- column 1 start =========== -->
+          <div class="column">
+            <div class="left card">
+              <img src="images/Katherine.jpg" alt="" />
+              <div class="slider">
+                <span class="inner-box">
+                  <i class="fas fa-align-left"></i>
+                </span>
+                <p>8 Most underrated workouts</p>
+                <div class="news-article-text">
+                  <h3 class="news-article-para">
+                    Whether you`re a diehard cruncher or stalwart planker, your
+                    ab workout could probably use a tune-up.
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="left card">
+              <img src="images/news2.jpg" alt="" />
+              <div class="slider">
+                <span class="inner-box">
+                  <i class="fas fa-align-left"></i>
+                </span>
+                <p>underestimating workouts music</p>
+                <div class="news-article-text">
+                  <h3 class="news-article-para">
+                    Get fitter, faster. Burn calories quickly with this
+                    high-intensity circuit! If you`ve got 15 minutes, you can
+                    send fat fleeing.
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- column 1 end =========== -->
+
+          <!-- column 2 start =========== -->
+          <div class="column">
+            <div class="left card">
+              <img src="images/hc_1-795x544.jpg" alt="" />
+              <div class="slider">
+                <span class="inner-box">
+                  <i class="fas fa-align-left"></i>
+                </span>
+                <p>Personalized Nutrition Plan</p>
+                <div class="news-article-text">
+                  <h3 class="news-article-para">
+                    Lorem ipsum dolor sit,<br />
+                    amet consectetur
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="left card">
+              <img src="images/hc_22.jpg" alt="" />
+              <div class="slider">
+                <span class="inner-box">
+                  <i class="fas fa-align-left"></i>
+                </span>
+                <p>Personalized Nutrition Plan</p>
+                <div class="news-article-text">
+                  <h3 class="news-article-para">
+                    Lorem ipsum dolor sit,<br />
+                    amet consectetur
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- column 2 end =========== -->
+
+          <!-- column 3 start =========== -->
+          <div class="column">
+            <div class="left card">
+              <img src="images/hc_5-795x500.jpg" alt="" />
+              <div class="slider">
+                <span class="inner-box">
+                  <i class="fas fa-align-left"></i>
+                </span>
+                <p>Personalized Nutrition Plan</p>
+                <div class="news-article-text">
+                  <h3 class="news-article-para">
+                    Lorem ipsum dolor sit,<br />
+                    amet consectetur
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="left card">
+              <img src="images/hc_6-795x544.jpg" alt="" />
+              <div class="slider">
+                <span class="inner-box">
+                  <i class="fas fa-align-left"></i>
+                </span>
+                <p>Personalized Nutrition Plan</p>
+                <div class="news-article-text">
+                  <h3 class="news-article-para">
+                    Lorem ipsum dolor sit,<br />
+                    amet consectetur
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- column 23 end =========== -->
+        </div>
+      </div>
+    </section>
+    <!-- news and article end  -->
+
+    <!-- huge cofee selection start  -->
+    <section class="coffee-selection">
+      <div class="coffee-selection-inner">
+        <i class="fas fa-leaf"></i>
+        <h1>Huge Selection Of Green Coffees and Herbal Teas!</h1>
+        <p>
+          Only our shop will take care of that you get the highest quality of
+          goods aimed at correction of your shape and improving your general
+          mood and life satisfaction.
+        </p>
+      </div>
+    </section>
+    <!-- huge cofee selection end  -->
+
+    <!-- succes stories start ====== -->
+    <section class="success-stories">
+      <span class="box"></span>
+      <div class="owl-carousel">
+        <div class="item">
+          <img src="images/adil.jpg" alt="" />
+          <div class="caption-text">
+            <div class="caption-text-inner">
+              <h1>Muhammad Adil Khan</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptate omnis vel eum eos quibusdam, fugit quod sunt ipsum
+                quos, ab vero rerum at doloribus qui placeat aperiam inventore,
+                nihil ducimus!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/hamza.jpg" alt="" />
+          <div class="caption-text">
+            <div class="caption-text-inner">
+              <h1>Hamza Kamal khan</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptate omnis vel eum eos quibusdam, fugit quod sunt ipsum
+                quos, ab vero rerum at doloribus qui placeat aperiam inventore,
+                nihil ducimus!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/ayan.jpg" alt="" />
+          <div class="caption-text">
+            <div class="caption-text-inner">
+              <h1>Ayan Wazir</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptate omnis vel eum eos quibusdam, fugit quod sunt ipsum
+                quos, ab vero rerum at doloribus qui placeat aperiam inventore,
+                nihil ducimus!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/Katherine.jpg" alt="" />
+          <div class="caption-text">
+            <div class="caption-text-inner">
+              <h1>Katherine Langford</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptate omnis vel eum eos quibusdam, fugit quod sunt ipsum
+                quos, ab vero rerum at doloribus qui placeat aperiam inventore,
+                nihil ducimus!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- succes stories end ====== -->
+
+    <!-- contact us section start  -->
+    <section class="contactus">
+      <i class="fas fa-leaf"></i>
+      <h1>Request a free consultation</h1>
+      <p>
+        It`s time to take care of your health now! And you see this guest will
+        visit the club
+      </p>
+      <div class="form">
+        <form action="#" autocomplete="off">
+          <div class="top-form">
+            <div class="name">
+              <i class="fas fa-user"></i>
+              <input type="text" name="name" placeholder="Name" />
+            </div>
+            <div class="email">
+              <i class="fas fa-envelope"></i>
+              <input type="email" name="email" placeholder="your Email" />
+            </div>
+            <div class="phone">
+              <i class="fas fa-phone-square-alt"></i>
+              <input type="text" name="phone" placeholder="Phone" />
+            </div>
+          </div>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Something in your mind?"
+          ></textarea>
+          <button type="submit" name="submit" class="contact-btn">
+            Send Request
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- contact us section end ============ -->
+    <!-- footer section start ======= -->
+    <section class="footer">
+      <div class="footer-top">
+        <div class="footer-top-left">
+          <img src="images/footer-img.png" alt="" />
+        </div>
+        <div class="footer-top-right">
+          <div class="footer-top-right-inner">
+            <h1><i class="fab fa-opencart"></i> &nbsp;&nbsp;Visit my Shop</h1>
+            <p>
+              You will find many interesting things for the strengthening of
+              your body
+            </p>
+            <a href="#" class="footer-arrow"
+              ><i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- footer section bottom start ========-->
+      <section class="footer-bottom">
+        <div class="row">
+          <div class="about">
+            <h3>ABOUT US</h3>
+            <p>
+              I understand very well how lack of confidence can be an obstacle.
+              That is why I dedicated myself to helping people overcome their
+              fears and improve their looks - and their lives.
+            </p>
+            <div class="social-icon">
+              <a href="#"><i class="fab fa-instagram-square"></i></a>
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </div>
+          </div>
+          <div class="findus">
+            <h3>FIND US HERE</h3>
+
+            <p>USA, California 20, First Avenue, California</p>
+            <br />
+            <p>Tel: +7 998 71 150 30 20</p>
+            <p>Tel: +7 998 71 150 30 20</p>
+            <h5>abc@gmail.com</h5>
+          </div>
+          <div class="pages">
+            <h3>PAGES</h3>
+            <div class="row">
+              <div class="col">
+                <a href="#">link 1</a>
+                <a href="#">link 2</a>
+                <a href="#">link 3</a>
+                <a href="#">link 4</a>
+                <a href="#">link 5</a>
+              </div>
+              <div class="col">
+                <a href="#">link 6</a>
+                <a href="#">link 7</a>
+                <a href="#">link 8</a>
+                <a href="#">link 9</a>
+              </div>
+            </div>
+          </div>
+          <div class="instagram">
+            <h3>INSTAGRAM</h3>
+            <div class="insta-inner">
+              <div class="col">
+                <img src="images/footer1 (1).jpg" alt="" />
+                <img src="images/footer1 (2).jpg" alt="" />
+              </div>
+              <div class="col">
+                <img src="images/footer1 (3).jpg" alt="" />
+                <img src="images/footer1 (4).jpg" alt="" />
+              </div>
+              <div class="col">
+                <img src="images/footer1 (5).jpg" alt="" />
+                <img src="images/footer1 (6).jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- footer section bottom end ========-->
+      <!-- copyright start  -->
+      <section class="copyright">
+        <p>© 2020 Health Coach | Theme for a Personal Trainer</p>
+      </section>
+      <!-- copyright end  -->
+    </section>
+    <!-- footer section end ============-->
+    <!-- jquery link  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

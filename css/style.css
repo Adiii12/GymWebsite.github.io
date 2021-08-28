@@ -459,7 +459,7 @@
 .three-month {
   background-image: url("../images/info-block-bg-1-min.jpg");
   background-size: cover;
-/*   background-attachment: fixed; */
+
   height: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
